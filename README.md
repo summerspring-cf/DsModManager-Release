@@ -85,6 +85,18 @@ inside every archive.
 
 ---
 
+## Making a mod that plugs into this
+
+If you write mods for this game, the manager can render **your** settings too — ship one small
+`dsplugin.ini` next to your mod and you get toggles, dropdowns, key binds, colour pickers and
+sliders on the title screen, with no code to link against.
+
+**➜ [PLUGIN_GUIDE.md](PLUGIN_GUIDE.md)** — the full contract, in English and Korean.
+[`dsmm_options.lua`](dsmm_options.lua) (optional Lua helper) and
+[`dsplugin.ini.example`](dsplugin.ini.example) are in this repository, free to copy.
+
+---
+
 ## Verifying what you downloaded
 
 SHA-256 hashes for every archive and for every DLL inside it are published in
@@ -177,6 +189,16 @@ UE4SS 는 전제 조건이라 그것 없이는 모드가 로드되지 않습니�
 동봉 빌드: experimental 채널 커밋 `c838a8ac`, `UE4SS.dll` 16,519,168 바이트.
 모드 DLL 이 이 빌드의 export 로 링크되어 있어 다른 판에서는 로드가 거부됩니다
 (게임은 정상 실행되고 모드만 안 뜹니다). 그래서 검증된 판을 고정해 동봉합니다.
+
+## 이 매니저에 붙는 모드 만들기
+
+모드를 만드시면 **당신의 설정도** 이 패널에 그릴 수 있습니다. 모드 옆에 작은
+`dsplugin.ini` 하나만 두면 토글·드롭다운·키 지정·색상 선택·슬라이더가 타이틀 화면에
+생깁니다. 링크할 코드는 없습니다.
+
+**➜ [PLUGIN_GUIDE.md](PLUGIN_GUIDE.md)** — 전체 계약 (영문·한국어).
+[`dsmm_options.lua`](dsmm_options.lua) 와 [`dsplugin.ini.example`](dsplugin.ini.example) 도
+이 저장소에 있고 자유롭게 복사하셔도 됩니다.
 
 ## 받은 파일 검증
 

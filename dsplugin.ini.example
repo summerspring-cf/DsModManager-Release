@@ -1,0 +1,63 @@
+; dsplugin.ini — 모드 폴더 루트에 두면 모드매니저가 옵션 UI를 만들어 줍니다.
+; 자세한 설명은 PLUGIN_GUIDE.md 참고. (UTF-8 로 저장할 것)
+
+[plugin]
+; 선택: 패널에 표시될 한글 이름 (생략 시 폴더명). UTF-8 로 저장할 것.
+name=내 모드 한글이름
+; 선택: 구형 공용 계약(mods_enabled.txt)의 키. 신규 모드는 생략하고
+; dsruntime.txt 만 읽으면 됩니다.
+;runtime_key=mymod
+
+[option:sound]
+label=소리 알림
+type=bool
+default=1
+
+[option:radius]
+label=탐지 반경 (m)
+type=int
+min=20
+max=200
+step=10
+default=60
+
+[option:mode]
+; choices= 가 있으면 ◀▶ 스테퍼 대신 게임 설정창식 콤보박스(드롭다운)가 됩니다.
+; 저장값 = 0부터 시작하는 인덱스 (아래에서 "정밀" 선택 = mode=2). 최대 10개.
+label=동작 방식
+type=int
+choices=자동, 빠름, 정밀
+default=0
+
+[option:togglekey]
+; type=key — 클릭 후 누른 키가 저장됩니다. 저장값 = 윈도우 가상키 코드.
+; default 를 생략하면 "없음"(0) 에서 시작합니다 (권장). Delete = 지정 해제.
+label=표시 켜기/끄기 키
+type=key
+
+[option:markercolor]
+; type=color — 색 견본 + #RRGGBB. 저장값 = 0xRRGGBB 정수(파일에는 10진수).
+label=마커 색
+type=color
+default=#FFD60A
+
+[option:showtimer]
+; type=check — bool 과 값은 같고(0/1) 생김새만 작은 네모 체크입니다.
+label=남은 시간 표시
+type=check
+default=1
+
+[option:rescan]
+; type=button — 값이 아니라 '한 번 시키는' 컨트롤. 저장값 = 누른 횟수.
+; 모드는 값이 지난번보다 커졌을 때 한 번 일하면 됩니다. default 는 적지 마세요.
+label=지금 다시 탐색
+type=button
+button=지금 실행
+
+[option:opacity]
+; type=slider — 가로 게이지. 허용 범위 0~1000 (생략 시 0~100).
+label=오버레이 불투명도
+type=slider
+min=0
+max=100
+default=80
