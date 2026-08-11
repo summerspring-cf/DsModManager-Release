@@ -11,6 +11,15 @@ It manages **Lua mods, C++ mods and `.pak` content mods** side by side.
 
 **➜ [Download the latest release](../../releases/latest)**
 
+Two builds are published:
+
+| File | For | UE4SS |
+|---|---|---|
+| **DsCppModManager_&lt;ver&gt;.zip** | Most people (all-in-one) | **Included** |
+| **DsCppModManager-NoUE4SS_&lt;ver&gt;.zip** | You already run UE4SS | **Not included** |
+
+Both contain the same manager. The no-UE4SS build is tiny; the all-in-one carries UE4SS.
+
 This repository holds **release archives only**. Nothing is built here.
 
 ---
@@ -26,8 +35,10 @@ This repository holds **release archives only**. Nothing is built here.
 
 If you see *Access denied*, right-click `install.bat` and choose **Run as administrator**.
 
-**UE4SS is included.** You do not need to download or install it separately.
-If you already have UE4SS, `install.bat` leaves your installation completely alone.
+**The all-in-one build includes UE4SS** — you do not need to download it separately, and
+`install.bat` leaves an existing UE4SS installation completely alone. If you already run UE4SS,
+the **no-UE4SS** build is a tiny download; its `install.bat` stops with a message if UE4SS
+isn't installed yet.
 
 ### Adding your mods
 
@@ -56,6 +67,10 @@ In game: **모드매니저 → 기본 → [폴더 바로가기]** opens that fol
 - **Order tab** — drag mods into the order you want
 - **No copies of your mods** — they live only in `plugins\`; enabling creates a directory junction
 - **`.zip` auto-extract** and deep discovery, so any packaging layout works
+- **Full gamepad support** — navigate the panel with the pad; on the title screen press **Y**
+  to open the manager (this game's title menu can't stop the D-pad on the manager row, so a
+  dedicated Y button is the entry point)
+- **Korean / English UI** — follows the game's language automatically
 - **Safety guard** — on a game patch or a crashed previous run, all mods are switched off at startup
 
 ---
@@ -132,6 +147,15 @@ described above.
 
 **➜ [최신 배포본 받기](../../releases/latest)**
 
+배포본은 두 가지입니다.
+
+| 파일 | 대상 | UE4SS |
+|---|---|---|
+| **DsCppModManager_&lt;버전&gt;.zip** | 대부분의 사용자 (올인원) | **동봉** |
+| **DsCppModManager-NoUE4SS_&lt;버전&gt;.zip** | 이미 UE4SS 를 쓰는 경우 | **미동봉** |
+
+둘 다 같은 매니저입니다. 미동봉판은 아주 작고, 올인원은 UE4SS 를 함께 담습니다.
+
 이 저장소에는 **배포본만** 있습니다. 여기서 빌드하지 않습니다.
 
 ## 설치
@@ -145,8 +169,9 @@ described above.
 
 *Access denied* 가 나오면 `install.bat` 우클릭 → **관리자 권한으로 실행**.
 
-**UE4SS 는 함께 들어 있습니다.** 따로 받지 않으셔도 됩니다.
-이미 UE4SS 를 쓰고 계시면 `install.bat` 이 그쪽을 전혀 건드리지 않습니다.
+**올인원 배포본에는 UE4SS 가 함께 들어 있습니다.** 따로 받지 않으셔도 되고, 이미 UE4SS 를
+쓰고 계시면 `install.bat` 이 그쪽을 전혀 건드리지 않습니다. 이미 UE4SS 가 있다면 **미동봉판**
+을 받으셔도 됩니다 — 아주 작고, UE4SS 가 없으면 안내 후 설치를 중단합니다.
 
 ### 모드 넣는 곳
 
@@ -170,6 +195,9 @@ described above.
 - **순서 탭** — 마우스로 끌어서 모드 순서 지정
 - **모드 사본을 만들지 않음** — `plugins\` 한 곳에만 존재하고, 켜면 정션이 생깁니다
 - **`.zip` 자동 해제**, 10단계 깊이 탐색 — 어떻게 압축했든 인식합니다
+- **게임패드 전면 지원** — 패드로 패널 조작, 타이틀 화면에서 **Y** 로 매니저 열기
+  (이 게임의 타이틀 메뉴는 방향키가 매니저 항목에 멈추지 못해 전용 Y 버튼을 진입 경로로 둡니다)
+- **한국어 / English UI** — 게임 언어를 자동으로 따라감
 - **안전장치** — 게임 패치나 직전 크래시를 감지하면 시작할 때 모드를 전부 끕니다
 
 ## ⚠ UE4SS 는 제가 만든 것이 아닙니다
