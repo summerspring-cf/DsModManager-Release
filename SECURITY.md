@@ -8,7 +8,9 @@ download.
 
 ## 1. What is mine and what is not
 
-**I did not write UE4SS.** By size, **98.6 % of every archive here is not my code.**
+**I did not write UE4SS.** By size, **98.6 % of the all-in-one archive is not my code.**
+(The separate **no-UE4SS** build contains none of it — it is only the `DsCppModManager/` folder
+plus `install.bat`, and is 100 % my code.)
 
 | | Size | Share | Author |
 |---|---|---|---|
@@ -26,6 +28,24 @@ without running anything.
 ---
 
 ## 2. SHA-256
+
+### v0.40
+
+All-in-one (UE4SS bundled):
+
+| File | Size (bytes) | SHA-256 |
+|---|---|---|
+| `DsCppModManager_0.40.zip` | 7,372,473 | `845ff7f735a6e6c226d8d8490645225064e3a36768fb2c67f730d79de5209da0` |
+| ↳ `DsCppModManager/dlls/main.dll` | 276,992 | `c169def1555d2f57f8c65ddeea2523422c9ae7e71f0e6c4dfd3e3591ac7acfea` |
+| ↳ `UE4SS/ue4ss/UE4SS.dll` | 16,519,168 | `d0107f63e567313cb6a15c505b5db2bdba38130964a04e019bda7611c6178022` |
+| ↳ `UE4SS/dwmapi.dll` | 71,680 | `cfbd121b9e464b3ff35baba0f065d860aaffa7eb90f703748cd8e5b7730fa97e` |
+
+No-UE4SS (for players who already run UE4SS):
+
+| File | Size (bytes) | SHA-256 |
+|---|---|---|
+| `DsCppModManager-NoUE4SS_0.40.zip` | 192,410 | `156f23fbde6200c0c70ee9197f59bd05f974d6ad4e777821df67103eb0247569` |
+| ↳ `DsCppModManager/dlls/main.dll` | 276,992 | `c169def1555d2f57f8c65ddeea2523422c9ae7e71f0e6c4dfd3e3591ac7acfea` |
 
 ### v0.30
 
