@@ -124,12 +124,6 @@ SHA-256 hashes for every archive and for every DLL inside it are published in
 | **[Hangul Patch Studio](https://hangulpatchstudio.com/g/%EB%93%9C%EB%9E%98%EA%B3%A4%EC%86%8C%EB%93%9C-%EB%AA%A8%EB%93%9C%EB%A7%A4%EB%8B%88%EC%A0%80)** | My own distribution page (Korean). Direct download, no account needed. |
 | Nexus Mods | Pending — the upload is under automated review. |
 
-## Source
-
-Published for security review at
-**[summerspring-cf/DsModManager](https://github.com/summerspring-cf/DsModManager)**,
-with full build instructions.
-
 ## Licence
 
 **All rights reserved.** Do not redistribute these archives or publish modified builds.
