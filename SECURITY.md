@@ -124,15 +124,6 @@ network activity.
 
 ---
 
-## 5. Source
-
-The complete source, with build instructions, is published at
-**[summerspring-cf/DsModManager](https://github.com/summerspring-cf/DsModManager)**.
-The mod is a single C++ translation unit; building it requires only Visual Studio Build Tools
-2022 and takes about a minute.
-
----
-
 ## Contact
 
 Issues on this repository, or the mod's Nexus Mods comments section.
