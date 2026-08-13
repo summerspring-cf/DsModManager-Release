@@ -1,8 +1,7 @@
 # Verifying these releases
 
 Hashes for every archive published here, and a plain statement of what the mod does at
-runtime. This page is self-contained — you do not need the source repository to check a
-download.
+runtime. This page is self-contained — everything you need to verify a download is here.
 
 ---
 
