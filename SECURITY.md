@@ -28,6 +28,24 @@ without running anything.
 
 ## 2. SHA-256
 
+### v0.50
+
+All-in-one (UE4SS bundled):
+
+| File | Size (bytes) | SHA-256 |
+|---|---|---|
+| `DsCppModManager_0.50.zip` | 7,401,586 | `873de6123902c62f15e07249e0d3b152dec12da7706c6a57d352fc7aea1630e3` |
+| ↳ `DsCppModManager/dlls/main.dll` | 330,752 | `a45f02a82e2659f522478ec2486f7652109e9f9f15cbe87082bb68d15febcecf` |
+| ↳ `UE4SS/ue4ss/UE4SS.dll` | 16,519,168 | `d0107f63e567313cb6a15c505b5db2bdba38130964a04e019bda7611c6178022` |
+| ↳ `UE4SS/dwmapi.dll` | 71,680 | `cfbd121b9e464b3ff35baba0f065d860aaffa7eb90f703748cd8e5b7730fa97e` |
+
+No-UE4SS (for players who already run UE4SS):
+
+| File | Size (bytes) | SHA-256 |
+|---|---|---|
+| `DsCppModManager-NoUE4SS_0.50.zip` | 221,537 | `3a30abda87ffa5eb8d2ff8459a33e6009f49d91e2b8984a9e0d0e69cdf5be812` |
+| ↳ `DsCppModManager/dlls/main.dll` | 330,752 | `a45f02a82e2659f522478ec2486f7652109e9f9f15cbe87082bb68d15febcecf` |
+
 ### v0.40
 
 All-in-one (UE4SS bundled):
