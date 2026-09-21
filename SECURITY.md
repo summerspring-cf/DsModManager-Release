@@ -28,6 +28,28 @@ without running anything.
 
 ## 2. SHA-256
 
+### v0.60
+
+All-in-one (UE4SS bundled):
+
+| File | Size (bytes) | SHA-256 |
+|---|---|---|
+| `DsCppModManager_0.60.zip` | 7,606,814 | `259ddeab40473f8cca76eed3d3b537d28906b7a9c3d4880adb40dbb8d433f65b` |
+| ↳ `DsCppModManager/dlls/main.dll` | 390,656 | `1c35e4e5ae2fd44b7bdcf9864bc0e9b646ebdd8564cdb881003edacdcefd8dee` |
+| ↳ `UE4SS/ue4ss/UE4SS.dll` | 16,519,168 | `d0107f63e567313cb6a15c505b5db2bdba38130964a04e019bda7611c6178022` |
+| ↳ `UE4SS/dwmapi.dll` | 71,680 | `cfbd121b9e464b3ff35baba0f065d860aaffa7eb90f703748cd8e5b7730fa97e` |
+
+No-UE4SS (for players who already run UE4SS):
+
+| File | Size (bytes) | SHA-256 |
+|---|---|---|
+| `DsCppModManager-NoUE4SS_0.60.zip` | 262,461 | `4c37efd2d2f4202fd3e1713d3bff0cd4c4611edbe5a93745b7e6666a0dad73f4` |
+| ↳ `DsCppModManager/dlls/main.dll` | 390,656 | `1c35e4e5ae2fd44b7bdcf9864bc0e9b646ebdd8564cdb881003edacdcefd8dee` |
+
+This release also ships `DsCppModManager/recovery_watchdog.ps1`, the PowerShell helper for the
+optional automatic-recovery mode. It is plain text, it is in the source repository, and it only
+runs when you switch that mode on.
+
 ### v0.51
 
 All-in-one (UE4SS bundled):
