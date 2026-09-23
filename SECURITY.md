@@ -28,6 +28,34 @@ without running anything.
 
 ## 2. SHA-256
 
+### v0.61
+
+All-in-one (UE4SS bundled):
+
+| File | Size (bytes) | SHA-256 |
+|---|---|---|
+| `DsCppModManager_0.61.zip` | 7,438,003 | `a411592fd7ffc2c119d815f69df12b53fe3882146ba285d1beb7471f6bd1c7fd` |
+| ↳ `DsCppModManager/dlls/main.dll` | 392,192 | `cf87e5c6712ebbe3cc39fec0a14b694a3bb25bd6ce1328ad14f7eef534456f72` |
+| ↳ `UE4SS/ue4ss/UE4SS.dll` | 16,519,168 | `d0107f63e567313cb6a15c505b5db2bdba38130964a04e019bda7611c6178022` |
+| ↳ `UE4SS/dwmapi.dll` | 71,680 | `cfbd121b9e464b3ff35baba0f065d860aaffa7eb90f703748cd8e5b7730fa97e` |
+
+No-UE4SS (for players who already run UE4SS v3.0.0 or newer):
+
+| File | Size (bytes) | SHA-256 |
+|---|---|---|
+| `DsCppModManager-NoUE4SS_0.61.zip` | 257,912 | `22f63feebb068014bc3041ca8bba54f8c9e72bb4526cb202f04088a612fb4463` |
+| ↳ `DsCppModManager/dlls/main.dll` | 392,192 | `cf87e5c6712ebbe3cc39fec0a14b694a3bb25bd6ce1328ad14f7eef534456f72` |
+
+Nexus Mods build (manager only — no UE4SS, no `install.bat`, no PowerShell helper):
+
+| File | Size (bytes) | SHA-256 |
+|---|---|---|
+| `DsCppModManager-Nexus_0.61.zip` | 250,263 | `b0715e6b48e2436943abada13e2f47ffcafbb42c878a690afe3506230372278a` |
+| ↳ `DsCppModManager/dlls/main.dll` | 392,192 | `cf87e5c6712ebbe3cc39fec0a14b694a3bb25bd6ce1328ad14f7eef534456f72` |
+
+Supported UE4SS versions for this release: **v3.0.0 (stable) through v3.0.1-1140-gf58e8f84 (latest experimental, 2026-09-21)**.
+
+
 ### v0.60
 
 All-in-one (UE4SS bundled):
